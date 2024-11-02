@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/c.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="bg-dark text-white p-3" id="sidebar">
+        <div class="sidebar-header text-center mb-4">
+            <img src="assets/img/cf-removebg-preview.png" alt="Logo" style="width: 80px; height: auto;">
+            <p>Welcome, Arya Ramandanu Roy Carol Rais </p>
+            <span class="text-muted">Administrator</span>
+        </div>
+
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-white active" href="index.html"><i class="fas fa-home"></i> Dashboard</a>
+            </li>
+            <div class="menu-section">
+                <p>MENU KARYAWAN</p>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="karyawan.html"><i class="fas fa-users"></i> Karyawan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="jabatan.html"><i class="fas fa-briefcase"></i> Jabatan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="divisi.html"><i class="fas fa-sitemap"></i> Divisi</a>
+            </li>
+            <div class="menu-section">
+                <p>MENU ABSENSI</p>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="absensi.html"><i class="fas fa-calendar-check"></i> Absensi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="izin.html"><i class="fas fa-envelope-open"></i> Izin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="lembur.html"><i class="fas fa-clock"></i> Lembur</a>
+            </li>
+            <div class="menu-section">
+                <p>MENU PENGGAJIAN</p>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="slip_gaji.html"><i class="fas fa-money-bill-wave"></i> Slip Gaji</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid p-4" id="main-content">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Dashboard</h2>
+            <div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light rounded-circle dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="activity active"></span>
+                                <img src="assets/img/face28-removebg-preview.png" height="30" width="30" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="profile.html" onclick="showProfile()">Profile</a>
+                        <a class="dropdown-item" href="flogin.html">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-solid fa-user-tie fa-2x text-primary"></i>
+                        <h5 class="card-title mt-2">Data Pegawai</h5>
+                        <p class="card-text fs-4">20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class= "far fa-calendar-check fa-2x text-success"></i>
+                        <h5 class="card-title mt-2">Absensi Hari Ini</h5>
+                        <p class="card-text fs-4">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="far fa-check-circle fa-2x text-warning"></i>
+                        <h5 class="card-title mt-2">Izin Menunggu Konfirmasi</h5>
+                        <p class="card-text fs-4">7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="far fa-clock fa-2x text-info"></i>
+                        <h5 class="card-title mt-2">Lembur Menunggu Konfirmasi</h5>
+                        <p class="card-text fs-4">10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Statistics Chart -->
+        <div class="card mt-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <img src="assets/img/code.jpg" height="375" width="1200">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Script Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- CDN untuk Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
