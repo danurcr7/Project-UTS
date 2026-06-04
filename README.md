@@ -16,7 +16,7 @@ Tech Stack:
 Tujuan Proyek:
 Membangun simulasi sistem administrasi karyawan untuk memahami alur pengelolaan kehadiran, lembur, dan penggajian dalam sebuah aplikasi web.
 
-Link: 
+Link: https://danurcr7.github.io/Project-UTS/
 
 Preview:
 
